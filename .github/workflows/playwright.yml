@@ -1,9 +1,12 @@
-name: Playwright Tests
+name: Playwright Tests + Allure
 
 on:
   push:
     branches: [ main ]
   pull_request:
+
+permissions:
+  contents: write
 
 jobs:
   test:
@@ -31,12 +34,6 @@ jobs:
       - name: Generate Allure Report
         run: npx allure generate ./allure-results --clean
 
-      - name: Upload Allure Report
-        uses: actions/upload-artifact@v4
-        with:
-          name: allure-report
-          path: allure-report
-          - name: Deploy Allure Report to GitHub Pages
       - name: Deploy Allure Report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
