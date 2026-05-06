@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","1450","Open homepage","webkit","2026-05-06","passed","2026-05-06","","example.spec.ts","",""
+"","834","Open homepage","chromium","2026-05-06","passed","2026-05-06","","example.spec.ts","",""
+"","3102","Open homepage","firefox","2026-05-06","passed","2026-05-06","","example.spec.ts","",""
